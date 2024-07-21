@@ -17,7 +17,7 @@ Saída esperada:
 ### Exemplo de uso: 
 
 Para recomendar os produtos para o usuário com o id = 2704635, utilize o url:
-*locahost:5000/2704635/recommended*
+*localhost:5000/2704635/recommended*
 
 **Erro comum:** 
 404 Not Found - o usuário não é válido.
