@@ -7,4 +7,4 @@ def get_top_products_from_sales(product_sales, quantity):
     top_products = product_sales[['product_id', 'sales_per_day']]
     top_products = top_products.groupby('product_id').sum()
     top_products = top_products.sort_values(by='sales_per_day', ascending=False).head(quantity)
-    return top_products
+    return top_products.reset_index()

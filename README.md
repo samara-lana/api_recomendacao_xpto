@@ -22,6 +22,14 @@ Para recomendar os produtos para o usuário com o id = 2704635, utilize o url:
 **Erro comum:** 
 404 Not Found - o usuário não é válido.
 
+## Configurações do Docker
+Execute os comandos abaixo:
+
+```shell
+docker build -t api_xpto .
+docker run --rm -p 5000:5000 --name c_api_xpto api_xpto
+```
+
 ## Limitações atuais da solução e possíveis evoluções
 
 Uma limitação dessa api é não conhecer o perfil dos usuários e por isso não ter uma relação do novo usuário com os usuários antigos. Uma vez que tenha-se informações dos usuários será possível recomendar o produto para o novo usuário de acordo com características do seu perfil, como: renda, gênero, localização, idade, quem o indicou, etc. que se assemelham com de usuários antigos.
